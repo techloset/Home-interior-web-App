@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import { useState } from 'react'
 import Hamburger from 'hamburger-react'
-import artboard from '../../homeImages/Artboard.svg'
+import artboard from '../../homeImages/Artboard21.webp'
 
 
 const Navbar = () => {
@@ -23,15 +23,15 @@ const Navbar = () => {
             <button className=' lg:hidden max-lg:pt-4  mt-[39px] ml-[10px] '> <Hamburger easing="ease-in" onToggle={clickMe} color='black' size={30} direction='left' toggled={isOpen} toggle={setIsOpen} /></button>
           </div>
           <div className='lg:block hidden'>
-            <p className="inline-flex items-center border-0 py-1 px-3 focus:outline-none text-purple-900 rounded text-xl font-medium  mt-4  md:mt-0">Join as Design Expert
+            <p className="inline-flex items-center border-0 py-1 px-3 focus:outline-none text-[#451A64] rounded text-xl font-medium  mt-4  md:mt-0">Join as Design Expert
             </p>
-            <p className="inline-flex items-center border-0 py-1 px-3 focus:outline-none  text-purple-900 rounded text-xl font-medium mt-4 md:mt-0">Partner with LAND Interiors
+            <p className="inline-flex items-center border-0 py-1 px-3 focus:outline-none  text-[#451A64] rounded text-xl font-medium mt-4 md:mt-0">Partner with LAND Interiors
             </p>
           </div>
         </div>
         <div>
 
-          <nav className={`md:ml-auto md:mr-auto  list-none ${isOpen? 'flex':'hidden'} animate__bounceInDown  animate__animated max-sm:flex-col    lg:flex  flex-wrap text-xl font-normal items-center text-black  justify-center`}>
+          <nav className={`md:ml-auto md:mr-auto  list-none ${isOpen? 'flex':'hidden'} animate__bounceInDown  animate__animated max-sm:flex-col    lg:flex  flex-wrap text-xl font-normal items-center text-[#000000] justify-center`}>
 
 
             <li className="mr-5 hover:text-gray-900">About   </li>

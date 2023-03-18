@@ -1,63 +1,89 @@
 
-import React, { Component } from "react";
+import React from 'react'
+import bg from '../../homeImages/image22.webp'
+import ellipse from '../../homeImages/ellipse30.webp'
+import './review.css'
+import { useRef } from 'react'
 import Slider from "react-slick";
-// import { baseUrl } from "./config";
-import bg from '../../homeImages/ellipse_bg.svg'
-import ellipse from '../../homeImages/ellipse.svg'
 
 const Costumers = () => {
+    const slide = React.useRef(null)
 
     const settings = {
-        dots: false,
+        className: "center",
+        centerMode: true,
         infinite: true,
-        speed: 500,
+        centerPadding: "150px",
         slidesToShow: 1,
-        slidesToScroll: 1,
+        dots: true,
+
+        autoplay: true,
+        autoplaySpeed: 200,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,
+
+                    infinite: true,
+                    dots: true
+
+                }
+            },]
+
 
     };
     return (
-        <>
+        <div className='flex items-center flex-col justify-start gap-10 max-lg:ml-[5%]'>
+            <p className='font-medium md:text-4xl max-md:text-3xl max-sm:text-2xl text-[#241330]  mt-10'>Our Happy Costumers</p>
+            <p className='md:w-2/3 max-md:w-11/12 text-center text-[#000000] ' >Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim</p>
+            <div className='w-11/12 overflow-hidden '>
+                <Slider {...settings}>
+                    <div className=''>
+                        <div className='bg-cover bg-no-repeat  relative divParent md:mb-28 mx-10' style={{ backgroundImage: `url(${bg})` }}>
 
-            <div class="flex flex-col justify-center items-center ">
-                <div class=" md:text-3xl text-gray-900 font-medium text-xl ">Our Happy Costumers</div>
-                <div class="text-black text-sm text-center w-[50%] mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
-                    luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim
-                </div>
-            </div>
+                            <img src={ellipse} alt="" className='absolute z-10 Imgclass' />
+                            <div id='bg-white' className='bg-white  drop-shadow-xl md:pt-20 max-md:h-28 max-sm:h-32 max-md:pt-7 box-border px-5 pb-5 flex items-center   absolute z-0  flex-col  md:w-2/3 max-md:w-11/12'>
 
-            <Slider  {...settings}>
-                <div className="mx-36 relative h-full py-28">
-                    <img src={bg} width='80%' height='100%' />
+                                <p className=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</p>
+                                <p>-Jeo Stanlee</p>
+                            </div>
 
-
-                    <div class="bg-white shadow-lg flex absolute left-[15%] bottom-[7%] flex-col justify-center items-center py-4 h-56 md:w-[80%] lg:w-[50%]">
-                        <div class="-mt-20 ">
-                            <img src={ellipse} class="rounded-full " alt="" />
                         </div>
-                        <p class="text-center text-sm p-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-                            purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</p>
-                        <div class="flex flex-col lg:flex-row justify-center text-center lg:space-x-3">
-                            <h1 class="text-black text-xl font-semibold">-Jeo Stanlee</h1>
+                    </div>
+                    <div>
+                        <div className='bg-cover bg-no-repeat   relative divParent' style={{ backgroundImage: `url(${bg})` }}>
+
+                            <img src={ellipse} alt="" className='absolute z-20 Imgclass' />
+                            <div id='bg-white' className='bg-white  drop-shadow-xl md:pt-20 max-md:h-28 max-sm:h-32 max-md:pt-7 box-border px-5 pb-5 flex items-center   absolute z-10  flex-col  md:w-2/3 max-md:w-11/12'>
+
+                                <p className=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</p>
+                                <p>-Jeo Stanlee</p>
+                            </div>
+
                         </div>
                     </div>
 
-
-                </div>
-
-            </Slider>
-            <h1 className="text-left pl-20 mt-7 font-normal text-3xl">Let talk about ypur Dream home</h1>
-            <div className="flex justify-evenly py-16">
-                <input type="text" name="" id="" placeholder="Name" 
-                class="border-b border-gray-500 focus:outline-none  text-gray-500 font-normal text-2xl md:w-72 lg:w-[340px] " />
-                <input type="text" name="" id="" placeholder="Phone / Email"
-                class="border-b border-gray-500 focus:outline-none  text-gray-500 font-normal text-2xl md:w-72 lg:w-[340px] "  />
-                <button className='w-[260px] h-[70px] bg-purple-900 font-semibold text-2xl text-white'>Send</button>
+                </Slider>
             </div>
 
 
+            <div className='flex  mt-14 mb-14 items-center flex-col gap-7 w-full'>
+                <h1 className='sm:text-3xl  max-sm:text-base max-sm:font-semibold'>Let's talk about your Dream home</h1>
+                <form action="" className="flex gap-10 max-md:flex-col items-center justify-center w-full">
+                    <input type="text" className='border-b-[2px] md:w-1/4 max-md:w-2/3  focus:outline-0 ' placeholder='Name' />
+                    <input type="email" className="border-b-[2px] focus:outline-0 max-md:w-2/3   md:w-1/4" placeholder='Email' />
+                    <button style={{
+                        width: '200px', height: '60px'
+                    }} className="text-white font-bold  bg-[#4B2A63]  ">Send</button>
 
-        </>
-    );
+                </form>
+            </div>
+
+        </div>
+    )
 }
 
 export default Costumers
