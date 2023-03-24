@@ -61,7 +61,7 @@ const Costumers = () => {
         <div className='flex flex-col lg:items-center ml-[3rem] sm:ml-[7rem]  mt-[8rem]'>
 
             <h1 className='  font-medium md:text-4xl md:leading-[3.375rem] max-md:text-3xl max-sm:text-2xl text-[#241330] max-sm:self-start '>Our Happy Costumers</h1>
-            <p className='lg:w-[55%] sm:w-[85%]  lg:text-center text-[#000000] text-start text-2xl pt-[3rem] ' >Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+            <p className='lg:w-[55%] sm:w-[85%]  lg:text-center text-[#000000] text-start text-[18px] lg:text-2xl pt-[3rem] ' >Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
                 luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim</p> 
         </div>
 
