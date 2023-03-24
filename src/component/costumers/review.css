@@ -7,7 +7,7 @@
 }
 @media screen and (min-width:1400px){
     .Imgclass{
-    bottom: 2%;
+    bottom: 12%;
 
         left: 45%;
     }
@@ -18,7 +18,7 @@
          height:536px;
     }
     #bg-white{
-        top:85%;left:17%;
+        top:69%;left:17%;
 
     }
     
@@ -37,7 +37,7 @@
     .Imgclass{
         bottom: 28.5% ;
         width: 80px;
-left: 40%;
+        left: 40%;
     }
 }
 @media screen and (max-width:648px) {

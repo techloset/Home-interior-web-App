@@ -6,15 +6,17 @@ const Hero = () => {
   return (
     <>
 
-      <div className=" flex w-[100%]  mt-[68px] md:flex-row flex-col items-center relative">
+      <div className=" flex w-[100%]  lg:mt-[68px] md:flex-row flex-col items-center relative">
   
-        <img className="object-cover object-center rounded lg:w-[57%]" alt="hero" src={homeinterior} />
+        <img className="object-cover object-center rounded  lg:w-[1090px]" alt="hero" src={homeinterior} />
        
-        <div className="lg:w-[51%]  mx-auto max-md:mt-[22%] max-sm:mt-[20%] max-lg:mt-[35%]  lg:gap-[25px]  left-[5%] w-[90%]  h-[52%] flex justify-center absolute lg:left-[52%] bg-white bg-opacity-80    flex-col  items-center text-center">
-          <h1 className="text-sm sm:text-xl lg:mb-4 lg:pl-[3%] font-normal ">Get personalised home interiors
-            <p className='text-center font-semibold text-[#241330] text-lg sm:text-3xl'>  in just 50 days </p>
+        <div className="lg:w-[978px]   right-[5%] max-lg:left-[5%]  max-lg:bottom-0
+           flex justify-center absolute lg:right-0 bg-white bg-opacity-80   
+            flex-col  items-center text-center">
+          <h1 className="sm:pt-[61px] md:text-4xl sm:text-[28px] text-[18px]  sm:leading-[54px] font-normal ">Get personalised home interiors
           </h1>
-          <button className="inline-flex text-white max-sm:mt-[10px] max-lg:mt-[90px] lg:ml-[8%]  bg-[#4B2A63] border-0 sm:py-3 sm:px-6 p-2 focus:outline hover:bg-purple-900 font-semibold  md:text-lg lg:text-xl max-sm:text-xs">
+            <h1 className=' font-semibold text-[#241330]  md:text-5xl text-[32px] sm:leading-[72px]'>  in just 50 days </h1>
+          <button className="lg:mt-[44px] lg:mb-[77px] md:mt-[80px]    text-white    bg-[#4B2A63] border-0 md:py-[25px] md:px-[50px] py-[12px] px-[25px]   font-semibold md:text-3xl sm:text-2xl text-[13px]">
             SPEAK WITH A ONLINE CONSULTANT</button>
         </div>
       </div>
